@@ -44,6 +44,7 @@ These are the secondary things that some people may like access to. The informat
 
  - Room Bookings
  - Directory/Person Search
+ - Don't optimise it for IE, no one uses it.
 
 `*` This may be out of the scope of the system
 
