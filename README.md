@@ -1,6 +1,6 @@
 # SUSSED/Intranet Mockup
 
-## [Go to the site ➞](http://danpalmer.github.com/SUSSED-Mockup/)  
+## [Go to the site ➞](http://danpalmer.github.com/SUSSED-Mockup/mockup/)  
   
 *Please* tell me any feedback you have, the only way things you want will get into it is if you *tell us*.
 
@@ -55,3 +55,4 @@ Fork this, make changes, submit pull requests as usual, but try and stick to the
  - This is static only, and should remain so.
  - Any new pages you integrate, make sure they are accessible from the index page, link in the way they would be linked properly, or in the footer if you have to.
  - Stick to the current design, use Twitter Bootstrap where you can because its awesome and makes a consistent UI.
+
