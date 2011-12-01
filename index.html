@@ -1,162 +1,206 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-	<title>Southampton University Intranet</title>
-	
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	
-	<link rel="stylesheet" href="bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="style.css?v=1">
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="/static/js/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+<meta charset="utf-8">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>index.html</title>
 </head>
 <body>
-	
-	<!-- NAVIGATION -->
-	<div class="topbar">
-		<div class="topbar-inner">
-			<div class="container">
-				<h3>
-					<a href="index.html">Intranet</a>
-				</h3>
-				
-				<ul class="nav">
-					<li class="vertical_divider"></li>
-					<li><a href="calendar.html">Calendar</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="maps.html">Maps</a></li>
-					<li><a href="email.html">Email</a></li>
-				</ul>
-				
-				<ul class="nav secondary-nav">
-					<li class="dropdown" data-dropdown="dropdown">
-						<a href="#" class="dropdown-toggle">John Smith</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Student Records</a></li>
-							<li><a href="#">Settings</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Log Out</a></li>
-						</ul>
-					</li>
-				</ul>
-				
-				<form action="" class="pull-right">
-	            	<input class="input" type="text" placeholder="Search...">
-	          	</form>
-			</div>
-		</div>
-	</div>
-	
-	<!-- CONTENT -->
-	<div class="wrapper">
-		<div class="container" style="margin-top:60px;">
-		
-		
-			<!-- ALERT -->
-			<div class="alert-message warning">
-				<a class="close" href="#">×</a>
-				<p><strong>Warning!</strong> This site is still under development and may go offline at any time for maintenance, <a href="#">click here for more details</a>.</p>
-      		</div>
-      		<div class="alert-message info">
-				<a class="close" href="#">×</a>
-				<p><strong>Have Your Say!</strong> This mockup is on <a href="https://github.com/danpalmer/SUSSED-Mockup">Github</a> so please change things to what you want, or just suggest new ideas <a href="https://github.com/danpalmer/SUSSED-Mockup/issues">here</a>.</p>
-      		</div>
-		
-			<div class="row">
-			
-				<div class="span4">
-				<div class="well">
-					<h3>Timetable</h3>
-					<div>
-						<a href="#">COMP1234</a><br/><small>Today 2pm, 44/1041</small><br/><br/>
-						<a href="#">ELEC2034</a><br/><small>Today 3pm, 32/1005</small><br/><br/>
-						<a href="#">MATH3142</a><br/><small>Today 4pm, 59/2013</small><br/><br/>
-						<a href="#">INFO9999</a><br/><small>Tomorrow 10am, 53/4004</small><br/><br/>
-					</div>
-				</div>
-				</div>
-				
-				<div class="span4">
-				<div class="well">
-					<h3>Upcoming events</h3>
-					<div >
-						<a href="#">Karaoke</a><br/><small>Today 7pm, The Stags Head</small><br/><br/>
-						<a href="#">Society Meeting</a><br/><small>Today 8pm, The Stags Head</small><br/><br/>
-						<a href="#">Pulp Fiction</a><br/><small>Saturday 8pm, Union Films</small><br/><br/>
-						<a href="#">Something Else</a><br/><small>Sunday 3pm, The Nuffield Theatre</small><br/><br/>
-					</div>
-				</div>
-				</div>
-				
-				<div class="span4">
-				<div class="well">
-					<h3>News</h3>
-					<ul>
-						<li><a href="#">University wins award</a></li>
-						<li><a href="#">Researcher does something cool</a></li>
-						<li><a href="#">Students have no money</a></li>
-						<li><a href="#">Government does something stupid</a></li>
-					</ul>
-				</div>
-				</div>
-				
-				<div class="span4">
-				<div class="well">
-					<h3>Email</h3>
-					<div >
-						<a href="#">Nobel Prize Foundation</a><br/><small>We've got some great news...</small><br/><br/>
-						<a href="#">LinkedIn</a><br/><small>Message from Richard Branson...</small><br/><br/>
-						<a href="#">James Cameron</a><br/><small>Please reconsider writing Avatar 2...</small><br/><br/>
-						<a href="#">Guinness World Records</a><br/><small>Congratulations on your Rubik's Cube record...</small><br/><br/>
-					</div>
-				</div>
-				</div>
-				
-				<div class="span4">
-				<div class="well">
-					<h3>Assignments</h3>
-					<div >
-						<a href="#">The big essay</a><br/><small>Tomorrow 4pm</small><br/><br/>
-						<a href="#">Problem sheet</a><br/><small>Wednesday 4pm</small><br/><br/>
-						<a href="#">Big project</a><br/><small>Thursday 15th</small><br/><br/>
-						<a href="#">Something long</a><br/><small>January 10th</small><br/><br/>
-					</div>
-				</div>
-				</div>
-				
-			</div>
-	    </div>
-		
-		<div class="push" style="clear:both;"></div>
-	</div>
-	
-	
-	<!-- FOOTER -->
-	<footer class="footer">
-	  <div class="container">
-	    <p class="pull-right">© University of Southampton 2011</p>
-	    <p>
-	      This is a footer
-	      <small><a href="/about">more...</a></small>
-	    </p>
-	  </div>
-	</footer>
-	
-	<script>
-		var _gaq=[['_setAccount','UA-10577556-3'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-	<script src="bootstrap/js/bootstrap-dropdown.js"></script>
-	<script src="bootstrap/js/bootstrap-alerts.js"></script>
-	<script src="bootstrap/js/bootstrap-modal.js"></script>
-	
+<h1>SUSSED/Intranet Mockup</h1>
+
+<h2><a href="http://danpalmer.github.com/SUSSED-Mockup/">Go to the site ➞</a></h2>
+
+<p><em>Please</em> tell me any feedback you have, the only way things you want will get into it is if you <em>tell us</em>.</p>
+
+<p>Feedback options:</p>
+
+<ul>
+<li><a href="https://github.com/danpalmer/SUSSED-Mockup/issues">Github Issues</a></li>
+<li><a href="mailto:dan.palmer@me.com?subject=%5BMOCKUP%20FEEDBACK%5D&amp;body=Be%20as%20descriptive%20as%20possible%2C%20any%20features%2C%20suggestions%2C%20problems.%20Please%20keep%20the%20subject%20as%20%5BMOCKUP%20FEEDBACK%5D">Email me</a></li>
+</ul>
+
+
+<hr />
+
+<h3>What is the Intranet?</h3>
+
+<p>Last year the university decided that SUSSED was in need of an overhaul. They did a survey of students (and probably staff as well I assume) to find out what people wanted from the system.</p>
+
+<p>A few weeks ago, as I had responded to that survey, I was invited to the pilot programme for the replacement for SUSSED. For the moment it is called &lsquo;Intranet&rsquo;.</p>
+
+<p>I was disappointed with what I found. Despite being difficult to use and having information in strange places, SUSSED did actually have a large amount of useful information. The new site on the other hand seems to be lacking that.</p>
+
+<h3>What is wrong with the Intranet?</h3>
+
+<p>I think there are 3 main things wrong with the intranet, and from the students I have spoken to so far, this seems to be the general consensus.</p>
+
+<ol>
+<li><h4>It lacks useful information.</h4>
+
+<p> We mainly want to know information that immediately affects our studies and student life. Our timetable, email, and deadlines are probably the most important things we need.</p></li>
+<li><h4>It is difficult to use.</h4>
+
+<p> It is quite possible that some of this information we need is in fact on the site. It is just so difficult to use that it discourages us from using it.</p></li>
+<li><h4>It doesn&rsquo;t seem to target students.</h4>
+
+<p> I am working on getting more feedback from students on what they want, but so far, the intranet is not it. The direction it is going in seems to suggest a collaboration platform, but I&rsquo;m not sure that is what students need. Personally, if I need to collaborate on a project, I use Facebook and Google Docs, and I know that a large number of people on my course do the same. These might not be perfect, but everyone checks Facebook regularly so there are rarely issues with contacting people, and Docs has fantastic editing of documents/notes/etc for groups.</p></li>
+</ol>
+
+
+<h3>What do we actually need?</h3>
+
+<p>These are the primary things we need access to, the information is probably readily available to integrate into the site:</p>
+
+<ul>
+<li>Fast access to the information we use most often</li>
+<li>Email Access</li>
+<li>Calendar (Events and Timetable)</li>
+<li>Assignments/Deadlines*</li>
+<li>University News and Announcements</li>
+<li>Course and Module Announcements*</li>
+</ul>
+
+
+<p>These are the secondary things that some people may like access to. The information may or may not be readily available, much of it may be in systems like Scientia:</p>
+
+<ul>
+<li>Room Bookings</li>
+<li>Directory/Person Search</li>
+</ul>
+
+
+<p><code>*</code> This may be out of the scope of the system</p>
+
+<hr />
+
+<h3>Contributing to the mockup</h3>
+
+<p>Fork this, make changes, submit pull requests as usual, but try and stick to the following guidelines:</p>
+
+<ul>
+<li>This is static only, and should remain so.</li>
+<li>Any new pages you integrate, make sure they are accessible from the index page, link in the way they would be linked properly, or in the footer if you have to.</li>
+<li>Stick to the current design, use Twitter Bootstrap where you can because its awesome and makes a consistent UI.</li>
+</ul>
+
 </body>
 </html>
