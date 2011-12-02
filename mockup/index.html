@@ -22,19 +22,24 @@
 	<div class="topbar">
 		<div class="topbar-inner">
 			<div class="container">
-				<h3>
-					<a href="index.html">Intranet</a>
-				</h3>
+				<a href="index.html"><img src="logo.png" class="brand" /></a>
 				
 				<ul class="nav">
 					<li class="vertical_divider"></li>
 					<li><a href="calendar.html">Calendar</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="maps.html">Maps</a></li>
 					<li><a href="email.html">Email</a></li>
+					<li><a href="news.html">News</a></li>
+					<li class="dropdown" data-dropdown="dropdown">
+						<a href="#" class="dropdown-toggle">Resources</a>
+						<ul class="dropdown-menu">
+							<li><a href="maps.html">Campus Map</a></li>
+							<li><a href="computer_labs.html">ISS Lab Workstations</a></li>
+						</ul>
+					</li>
 				</ul>
 				
 				<ul class="nav secondary-nav">
+					<li class="vertical_divider"></li>
 					<li class="dropdown" data-dropdown="dropdown">
 						<a href="#" class="dropdown-toggle">John Smith</a>
 						<ul class="dropdown-menu">
@@ -47,8 +52,9 @@
 				</ul>
 				
 				<form action="" class="pull-right">
-	            	<input class="input" type="text" placeholder="Search...">
-	          	</form>
+	    	       	<input class="input" type="text" placeholder="Search..." style="margin-left:0px;">
+		        </form>
+				
 			</div>
 		</div>
 	</div>
@@ -63,72 +69,80 @@
 				<a class="close" href="#">×</a>
 				<p><strong>Warning!</strong> This site is still under development and may go offline at any time for maintenance, <a href="#">click here for more details</a>.</p>
       		</div>
-      		<div class="alert-message info">
-				<a class="close" href="#">×</a>
-				<p><strong>Have Your Say!</strong> This mockup is on <a href="https://github.com/danpalmer/SUSSED-Mockup">Github</a> so please change things to what you want, or just suggest new ideas <a href="https://github.com/danpalmer/SUSSED-Mockup/issues">here</a>.</p>
-      		</div>
 		
 			<div class="row">
-			
-				<div class="span4">
-				<div class="well">
-					<h3>Timetable</h3>
-					<div>
-						<a href="#">COMP1234</a><br/><small>Today 2pm, 44/1041</small><br/><br/>
-						<a href="#">ELEC2034</a><br/><small>Today 3pm, 32/1005</small><br/><br/>
-						<a href="#">MATH3142</a><br/><small>Today 4pm, 59/2013</small><br/><br/>
-						<a href="#">INFO9999</a><br/><small>Tomorrow 10am, 53/4004</small><br/><br/>
+				
+				
+				<div class="span8">
+					<div class="row">
+						
+						<div class="span8">
+						<div class="sectionbox">
+							<h3>Upcoming events</h3>
+							<p>
+								<a href="#">Karaoke</a><br/><small>Today 7pm, The Stags Head</small><br/>
+								<a href="#">Society Meeting</a><br/><small>Today 8pm, The Stags Head</small><br/>
+								<a href="#">Pulp Fiction</a><br/><small>Saturday 8pm, Union Films</small><br/>
+								<a href="#">Something Else</a><br/><small>Sunday 3pm, The Nuffield Theatre</small><br/>
+							</p>
+						</div>
+						</div>
+						
+						<div class="span8">
+						<div class="sectionbox">
+							<h3>Email</h3>
+							<p>
+								<a href="#">Nobel Prize Foundation</a><br/><small>We've got some great news...</small><br/>
+								<a href="#">LinkedIn</a><br/><small>Message from Richard Branson...</small><br/>
+								<a href="#">James Cameron</a><br/><small>Please reconsider writing Avatar 2...</small><br/>
+								<a href="#">Guinness World Records</a><br/><small>Congratulations on your Rubik's Cube record...</small><br/>
+							</p>
+						</div>
+						</div>
+						
+						<div class="span8">
+						<div class="sectionbox">
+							<h3>Assignments</h3>
+							<p>
+								<a href="#">The big essay</a><br/><small>Tomorrow 4pm</small><br/>
+								<a href="#">Problem sheet</a><br/><small>Wednesday 4pm</small><br/>
+								<a href="#">Big project</a><br/><small>Thursday 15th</small><br/>
+								<a href="#">Something long</a><br/><small>January 10th</small><br/>
+							</p>
+						</div>
+						</div>
+					
 					</div>
 				</div>
-				</div>
 				
-				<div class="span4">
-				<div class="well">
-					<h3>Upcoming events</h3>
-					<div >
-						<a href="#">Karaoke</a><br/><small>Today 7pm, The Stags Head</small><br/><br/>
-						<a href="#">Society Meeting</a><br/><small>Today 8pm, The Stags Head</small><br/><br/>
-						<a href="#">Pulp Fiction</a><br/><small>Saturday 8pm, Union Films</small><br/><br/>
-						<a href="#">Something Else</a><br/><small>Sunday 3pm, The Nuffield Theatre</small><br/><br/>
+				<div class="span8">
+					<div class="row">
+					
+						<div class="span8">
+						<div class="sectionbox">
+							<h3>Timetable</h3>
+							<div style="text-align:left;">
+								<img src="smallcalendar.png" />
+							</div>
+						</div>
+						</div>
+						
+						<div class="span8">
+						<div class="sectionbox">
+							<h3>News</h3>
+							<div>
+								<a href="#">University wins award</a><br/>
+								<a href="#">Researcher does something cool</a><br/>
+								<a href="#">Students have no money</a><br/>
+								<a href="#">Government does something stupid</a><br/>
+							</div>
+						</div>
+						</div>
+						
 					</div>
-				</div>
-				</div>
+				</span>
 				
-				<div class="span4">
-				<div class="well">
-					<h3>News</h3>
-					<ul>
-						<li><a href="#">University wins award</a></li>
-						<li><a href="#">Researcher does something cool</a></li>
-						<li><a href="#">Students have no money</a></li>
-						<li><a href="#">Government does something stupid</a></li>
-					</ul>
-				</div>
-				</div>
 				
-				<div class="span4">
-				<div class="well">
-					<h3>Email</h3>
-					<div >
-						<a href="#">Nobel Prize Foundation</a><br/><small>We've got some great news...</small><br/><br/>
-						<a href="#">LinkedIn</a><br/><small>Message from Richard Branson...</small><br/><br/>
-						<a href="#">James Cameron</a><br/><small>Please reconsider writing Avatar 2...</small><br/><br/>
-						<a href="#">Guinness World Records</a><br/><small>Congratulations on your Rubik's Cube record...</small><br/><br/>
-					</div>
-				</div>
-				</div>
-				
-				<div class="span4">
-				<div class="well">
-					<h3>Assignments</h3>
-					<div >
-						<a href="#">The big essay</a><br/><small>Tomorrow 4pm</small><br/><br/>
-						<a href="#">Problem sheet</a><br/><small>Wednesday 4pm</small><br/><br/>
-						<a href="#">Big project</a><br/><small>Thursday 15th</small><br/><br/>
-						<a href="#">Something long</a><br/><small>January 10th</small><br/><br/>
-					</div>
-				</div>
-				</div>
 				
 			</div>
 	    </div>
@@ -142,8 +156,8 @@
 	  <div class="container">
 	    <p class="pull-right">© University of Southampton 2011</p>
 	    <p>
-	      This is a footer
-	      <small><a href="/about">more...</a></small>
+	      This site is <strong>not</strong> associated with the University of Southampton. This is a student project.
+	      <small><a href="../">more...</a></small>
 	    </p>
 	  </div>
 	</footer>

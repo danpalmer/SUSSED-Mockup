@@ -10,95 +10,22 @@
 }
 
 
-/* BLOGS */
-.blog_post_container {
-	float:right;
-}
-.blog_post {
-	padding:20px;
-	border:1px solid #cbc8c2;
-}
-.blog_sidebar_container {
-	float:left;
-}
-.blog_sidebar {
-	padding:20px;
+.brand {
+	padding:3px 20px 3px 20px !important;
 }
 
+.span8 {
+	margin-bottom:10px;
+}
 
-/* SOCIETIES */
-.society_profile_container {
-	float:left;
-}
-.society_profile {
-	padding:20px;
-}
-.society_profile_picture_container {
-	text-align:center;
-}
-.pretty_box {
+.sectionbox {
+	padding: 9px;
+	background-color:#fcfcfc;
+	border: 1px solid rgba(0, 0, 0, .2);
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin-bottom:20px;
-	border:1px solid #cbc8c2;
-}
-.society_button_container {
-	width:auto;
-	margin:auto;
-	text-align:center;
-}
-
-
-/* MEMEBERS */
-.members_container {
-	float:right;
-}
-.member_normal, .member_team {
-	padding:3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	display:block;
-	margin-right:4px;
-	margin-bottom:4px;
-	float:left;
-}
-.member_normal {
-	background-color:#fdf5d9;
-	border:1px solid #fceec1;
-}
-.member_team {
-	background-color:#fddfde;
-	border:1px solid #fbc7c6;
-}
-.profile_picture {
-	padding:0px;
-}
-
-
-/* EVENTS */
-.event_description_container {
-	float:left;
-}
-.event_description_description, .event_description_name {
-	padding-left:20px;
-	padding-right:20px;
-	padding-bottom:20px;
-}
-.event_description_date {
-	padding-left:20px;
-	padding-right:20px;
-	padding-top:20px;
-}
-.event_description_name {
-	padding-bottom:0px;
-}
-.event_description_container:hover {
-	opacity:1.0;
+	border-radius:3px;
 }
 
 
@@ -130,39 +57,5 @@ html, body { height:100%; }
 	box-shadow:inset 0px 1px 1px rgba(1,1,1,0.1);
 	border: 1px solid #e9e9e9;
 	padding:59px;
-}
-.login_modal_iframe {
-	width:520px;
-	height:150px;
-}
-
-
-/* LIST SEARCH */
-#search_header input {
-	-webkit-appearance: none;
-	-webkit-font-smoothing: antialiased;
-	font-size: 60px;
-	display: block;
-	background-color:transparent;
-	border:none;
-	box-shadow:none;
-	width:100%;
-	height:auto;
-	padding:0px;
-	font-weight:bold;
-	letter-spacing:-2px;
-}
-#search_header {
-	background-color: whiteSmoke;
-	margin-bottom: 30px;
-	padding: 10px;
-	padding-bottom:10px;
-	display:block;
-	width: 920px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	box-shadow:inset 0px 1px 1px rgba(1,1,1,0.1);
-	border: 1px solid #e9e9e9;
 }
 
