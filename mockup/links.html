@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Southampton University Intranet</title>
+	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="style.css?v=1">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="/static/js/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+</head>
+<body>
+	
+	<!-- NAVIGATION -->
+	<div class="topbar">
+		<div class="topbar-inner">
+			<div class="container">
+				<a href="index.html"><img src="logo.png" class="brand" /></a>
+				
+				<ul class="nav">
+					<li class="vertical_divider"></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="email.html">Email</a></li>
+					<li><a href="news.html">News</a></li>
+					<li class="dropdown" data-dropdown="dropdown">
+						<a href="#" class="dropdown-toggle">Resources</a>
+						<ul class="dropdown-menu">
+							<li><a href="maps.html">Campus Map</a></li>
+							<li><a href="computer_labs.html">ISS Lab Workstations</a></li>
+							<li><a href="library.html">Library WebCat</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul class="nav secondary-nav">
+					<li class="vertical_divider"></li>
+					<li class="dropdown" data-dropdown="dropdown">
+						<a href="#" class="dropdown-toggle">John Smith</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Student Records</a></li>
+							<li><a href="#">Settings</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<form action="" class="pull-right">
+	    	       	<input class="input" type="text" placeholder="Search..." style="margin-left:0px;">
+		        </form>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- CONTENT -->
+	<div class="wrapper">
+		<div class="container" style="margin-top:60px;">
+		
+		
+			<!-- ALERT -->
+			<div class="alert-message warning">
+				<a class="close" href="#">×</a>
+				<p><strong>Warning!</strong> This site is still under development and may go offline at any time for maintenance, <a href="#">click here for more details</a>.</p>
+      		</div>
+			<div class="alert-message block-message info">
+				<a class="close" href="#">×</a>
+				<p><strong>Note!</strong> This page is more of a catch-all for random links. Students seem to want links to all other parts of the Uni systems as these are difficult to find elsewhere. Obviously the ideal situation would be to not have to have a page of links as they should be integrated into places that make sense. However this would probably not be achievable for everything, so a simple searchable page like this would help.</p>
+      		</div>
+			
+			<div id="search_header">
+				<input type="search" id="search_box" placeholder="search"/>
+			</div>
+			
+			<table id="link-list">
+			
+				<tr><td>
+					<h2>Unilink Network Bus Timetables</h2>
+					<p>Uni-link Information, also including map, fares, latest news and a history of the service.</p>
+				</td></tr>
+				<tr><td>
+					<h2>Sports</h2>
+					<p>Playing sport and getting fit has never been so easy!</p>
+				</td></tr>
+				<tr><td>
+					<h2></h2>
+					<p></p>
+				</td></tr>
+				<tr><td>
+					<h2>Faculties and Academic units</h2>
+					<p>The University is organised into eight Faculties, each with a number of academic units.</p>
+				</td></tr>
+
+			</table>
+		
+		<div class="push" style="clear:both;"></div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.uitablefilter.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var table = $("#link-list");
+			$("#search_box").keyup(function(obj) {
+				$.uiTableFilter(table, this.value);
+			});
+		});
+	</script>
+	
+	<script>
+		var _gaq=[['_setAccount','UA-10577556-3'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	<script src="bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="bootstrap/js/bootstrap-alerts.js"></script>
+	<script src="bootstrap/js/bootstrap-modal.js"></script>
+	
+</body>
+</html>
