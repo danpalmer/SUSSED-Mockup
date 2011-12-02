@@ -13,8 +13,11 @@
 	<link rel="stylesheet" href="bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="style.css?v=1">
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="/static/js/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<!--<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/flick/jquery-ui.css"/>-->
+	<link rel="stylesheet" href="css/jquery.multiSelect.css"/>
+	
 </head>
 <body>
 	
@@ -81,11 +84,11 @@
 		
 			<div class="row">
 				
-				
-				<div class="span8">
+				<!-- LEFT -->
+				<div class="span-one-third">
 					<div class="row">
 						
-						<div class="span8">
+						<div class="span-one-third">
 						<div class="sectionbox">
 							<h3>Email</h3>
 							<p>
@@ -97,7 +100,7 @@
 						</div>
 						</div>
 						
-						<div class="span8">
+						<div class="span-one-third">
 						<div class="sectionbox">
 							<h3>Assignments</h3>
 							<p>
@@ -109,7 +112,7 @@
 						</div>
 						</div>
 						
-						<div class="span8">
+						<div class="span-one-third">
 						<div class="sectionbox">
 							<h3>Upcoming events</h3>
 							<p>
@@ -124,19 +127,21 @@
 					</div>
 				</div>
 				
-				<div class="span8">
+				
+				<!-- MIDDLE -->
+				<div class="span-one-third">
 					<div class="row">
 					
-						<div class="span8">
+						<div class="span-one-third">
 						<div class="sectionbox">
 							<h3>Timetable</h3>
 							<div style="text-align:left;">
-								<img src="smallcalendar.png" />
+								<img src="smallcalendar2.png" />
 							</div>
 						</div>
 						</div>
 						
-						<div class="span8">
+						<div class="span-one-third">
 						<div class="sectionbox">
 							<h3>News</h3>
 							<p>
@@ -149,8 +154,55 @@
 						</div>
 						
 					</div>
-				</span>
+				</div>
 				
+				
+				<!-- RIGHT -->
+				<div class="span-one-third">
+					<div class="row">
+					
+						<div class="span-one-third">
+						<div class="sectionbox">
+							<h3>Notifications</h3>
+							<div class="pull-right">
+								<form>
+								<select id="notification-sources" multiple="multiple">
+									<option value=""></option>
+									<option value="comp2009">COMP2009 Operating Systems</option>
+									<option value="comp2011">COMP2011 Theory of Computing</option>
+									<option value="uf">Union Films</option>
+									<option value="uf-staff">Union Films Staff</option>
+									<option value="susu">SUSU</option>
+									<option value="ecs">ECS Department</option>
+									<option value="uos">University Notifications</option>
+								</select>
+								</form>
+							</div>
+							<div style="clear:both;"></div>
+							<div>
+								<strong><span class="label success">New</span> SUSU <small>2 minutes ago</small></strong>
+								<p>Remember to go to society Christmas parties, the are awesome!</p>
+								<hr/>
+								<strong>COMP2009 Operating Systems <small>3 hours ago</small></strong>
+								<p>Your coursework feedback is available, check the ECS module page for feedback</p>
+								<hr/>
+								<strong>University Notifications <small>5 hours ago</small></strong>
+								<p>Careers fair next Wednesday! Remember to come along to meet all sorts of employers in the field of Applied Ornithology.</p>
+								<hr/>
+								<strong>COMP2011 Theory of Computing <small>Yesterday</small></strong>
+								<p>I have scheduled a class test for Friday. I put all the questions you hated from the lecture on it. - Lecturer</p>
+								<hr/>
+								<strong>Union Films <small>Yesterday</small></strong>
+								<p>The Green Lantern - We just thought it was so amazing we would do a second showing of it. Come and join us to see what we think is the best film of the year on Sunday afternoon at 5pm.</p>
+								<hr/>
+								<strong><span class="label important">Important</span> University Notifications <small>Tuesday</small></strong><br/>
+								<p>The university has decided to close for today due to heavy snowfall and students being really lazy and not wanting to wake up for 9am lectures.</p>
+							</div>
+						</div>
+						</div>
+											
+					</div>
+				</div>
 				
 				
 			</div>
@@ -163,13 +215,23 @@
 	<!-- FOOTER -->
 	<footer class="footer">
 	  <div class="container">
-	    <p class="pull-right">© University of Southampton 2011</p>
+	    <p class="pull-right">© University of Hello World 2011</p>
 	    <p>
 	      This site is <strong>not</strong> associated with the University of Southampton. This is a student project.
 	      <small><a href="../">more...</a></small>
 	    </p>
 	  </div>
 	</footer>
+
+	
+	<script src="js/jquery.multiSelect.js"></script>
+	<script type="text/javascript">
+		$("#notification-sources").multiSelect({
+			oneOrMoreSelected: "Select Feeds",
+			noneSelected: "Select Feeds",
+			selectAllText: "All Feeds",	
+		});
+	</script>
 	
 	<script>
 		var _gaq=[['_setAccount','UA-10577556-3'],['_trackPageview']];
