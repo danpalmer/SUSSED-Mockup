@@ -29,9 +29,6 @@
 				
 				<ul class="nav">
 					<li class="vertical_divider"></li>
-					<li><a href="calendar.html">Calendar</a></li>
-					<li><a href="email.html">Email</a></li>
-					<li><a href="news.html">News</a></li>
 					<li class="dropdown" data-dropdown="dropdown">
 						<a href="#" class="dropdown-toggle">Resources</a>
 						<ul class="dropdown-menu">
@@ -49,16 +46,22 @@
 				<ul class="nav secondary-nav">
 					<li class="vertical_divider"></li>
 					<li class="dropdown" data-dropdown="dropdown">
-						<a href="#" class="dropdown-toggle">John Smith</a>
-						<ul class="dropdown-menu">
-							<li><a href="https://subscribe.iss.soton.ac.uk/subscribed.html">Subscribe</a></li>
-							<li><a href="http://www.soton.ac.uk/enrol/">Enrolment</a></li>
-							<li><a href="http://www.studentrecords.soton.ac.uk/">Personal Information</a></li>
-							<li><a href="https://www.webpayments.soton.ac.uk/">Financial Records</a></li>
+						<a href="#" class="dropdown-toggle">John Smith <span class="label important">7</span></a>
+						<ul class="dropdown-menu" style="width:400px !important;">
+							<li class="notification">
+								<p><a href="#"><strong>Union Films</strong> <span class="label success">New</span><br/>Pulp Fiction this Saturday. Tickets just &pound;3!</a></p>
+							</li>
+							<li class="notification">
+								<p><a href="#"><strong>Secure Systems</strong> <span class="label success">New</span><br/>Lab this Tuesday in the level 2 labs in Zepler.</a></p>
+							</li>
+							<li class="notification">
+								<p><a href="#"><strong>Professional and Legal Issues</strong><br/>No lecture this Monday, work on your group stuff instead.</a></p>
+							</li>
+							<li class="notification">
+								<p><a href="#"><strong>Picnic Society</strong><br/>Picnic this Sunday on the common!</a></p>
+							</li>							
 							<li class="divider"></li>
-							<li><a href="#">Intranet Settings</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Log Out</a></li>
+							<li><a href="notifications.html">All Notifications</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -77,146 +80,138 @@
 		
 		
 			<!-- ALERT -->
-			<div class="alert-message warning">
+			<div class="alert-message info">
 				<a class="close" href="#">×</a>
-				<p><strong>Warning!</strong> This site is still under development and may go offline at any time for maintenance, <a href="#">click here for more details</a>.</p>
+				<p><strong>Warning!</strong> In early January many university computer systems are going offline, <a href="#">click here for more details</a>.</p>
       		</div>
 		
 			<div class="row">
 				
+				<!-- Sidebar -->
+				<div class="span4">
+					<div class="profile">
+						<div class="userinfo">
+							<h4>John</h4>
+							<p>23997583</p>
+							<p>js1g10</p>
+						</div>
+						<img class="thumbnail" style="float:left;" src="http://placehold.it/90x90" alt="">
+						<div style="display:block;clear:both;"></div>
+						<hr class="separator"/>
+						
+						<h5>Modules</h5>
+						<p><a href="#">Software Analysis and Design <small>COMP2006</small></a> <span class="label important">1</span></p>
+						<p><a href="#">Operating Systems <small>COMP2009</small></a></p>
+						<p><a href="#">Theory of Computing <small>COMP2011</small></a></p>
+						<p><a href="#">Human and Computer Interaction <small>COMP2007</small></a></p>
+						<p><a href="#">Professional and Legal Issues <small>INFO2009</small></a></p>
+						<p><a href="#">Secure Systems <small>COMP2040</small></a></p>
+						<hr class="separator"/>
+						
+						<h5>Societies</h5>
+						<p><a href="#">Union Films</a> <span class="label important">1</span></p>
+						<p><a href="#">Union Films Staff</a>  <span class="label important">3</span></p>
+						<p><a href="#">Picnic Society</a></p>
+						<hr class="separator"/>
+						
+						<h5>University</h5>
+						<p><a href="#">University of Southampton</a></p>
+						<p><a href="#">Faculty of Physical and Applied Sciences</a> <span class="label important">2</span></p>
+						<p><a href="#">Computer Science 2010</a></p>
+						<hr class="separator"/>
+						
+					</div>
+				</div>
+				
+				
 				<!-- LEFT -->
-				<div class="span-one-third">
+				<div class="span12">
 					<div class="row">
 					
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>Notifications</h3>
-							<div class="pull-right">
-								<form>
-								<select id="notification-sources" multiple="multiple">
-									<option value=""></option>
-									<option value="comp2009">COMP2009 Operating Systems</option>
-									<option value="comp2011">COMP2011 Theory of Computing</option>
-									<option value="uf">Union Films</option>
-									<option value="uf-staff">Union Films Staff</option>
-									<option value="susu">SUSU</option>
-									<option value="ecs">ECS Department</option>
-									<option value="uos">University Notifications</option>
-								</select>
-								</form>
-							</div>
-							<div style="clear:both;"></div>
-							<div>
-								<strong><span class="label success">New</span> SUSU <small>2 minutes ago</small></strong>
-								<p>Remember to go to society Christmas parties, the are awesome!</p>
-								<hr/>
-								<strong>COMP2009 Operating Systems <small>3 hours ago</small></strong>
-								<p>Your coursework feedback is available, check the ECS module page for feedback</p>
-								<hr/>
-								<strong>University Notifications <small>5 hours ago</small></strong>
-								<p>Careers fair next Wednesday! Remember to come along to meet all sorts of employers in the field of Applied Ornithology.</p>
-								<hr/>
-								<strong>COMP2011 Theory of Computing <small>Yesterday</small></strong>
-								<p>I have scheduled a class test for Friday. I put all the questions you hated from the lecture on it. - Lecturer</p>
-								<hr/>
-								<strong>Union Films <small>Yesterday</small></strong>
-								<p>The Green Lantern - We just thought it was so amazing we would do a second showing of it. Come and join us to see what we think is the best film of the year on Sunday afternoon at 5pm.</p>
-								<hr/>
-								<strong><span class="label important">Important</span> University Notifications <small>Tuesday</small></strong><br/>
-								<p>The university has decided to close for today due to heavy snowfall and students being really lazy and not wanting to wake up for 9am lectures.</p>
+						<div class="span12" style="margin-bottom:20px;">
+							<div class="row">
+								<div class="span6">
+									<div class="sectionbox">
+										<a href="calendar.html"><h3>Timetable</h3></a>
+										<div style="text-align:left;">
+											<img src="smallcalendar.png" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="span6">
+									<div class="sectionbox">
+										<a href="email.html"><h3>Email</h3></a>
+										<p>
+											<a href="#">Nobel Prize Foundation</a><br/><small>We've got some great news about your paper on Deoxyribosenucleicultramicroscopicsilliconvolcanobiology...</small><br/>
+											<a href="#">LinkedIn</a><br/><small>Message from Richard Branson...</small><br/>
+											<a href="#">Gabe Newell</a><br/><small>I know you are busy, but I am really stuck with the Episode 3 script, any chance you can help...</small><br/>
+											<a href="#">Guinness World Records</a><br/><small>Congratulations on your Rubik's Cube record...</small><br/>
+											<a href="#">Google</a><br/><small>Regarding your recent job application, we have decided to offer you a job...</small><br/>
+											<a href="#">University of Southampton</a><br/><small>You are eligible for our new massive scholarship thing, so we are going to pay for everything...</small><br/>
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						</div>
-											
-					</div>
-				</div>
-				
-				
-				<!-- MIDDLE -->
-				<div class="span-one-third">
-					<div class="row">
-					
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>Timetable</h3>
-							<div style="text-align:left;">
-								<img src="smallcalendar2.png" />
+						
+						<div class="span4">
+							<div class="sectionbox">
+								<a href="news.html"><h3>News</h3></a>
+								<p>
+									<a href="#">University wins award</a>  <small>2 hours ago</small><br/>
+									<a href="#">Researcher does something cool</a>  <small>Yesterday at 3pm</small><br/>
+									<a href="#">Students have no money</a>  <small>Friday 4pm</small><br/>
+									<a href="#">Government does something stupid</a>  <small>December 1st</small><br/>
+								</p>
 							</div>
 						</div>
+						
+						<div class="span4">
+							<div class="sectionbox">
+								<h3>Assignments</h3>
+								<p>
+									<a href="#">The big essay</a><br/><small>Tomorrow 4pm</small><br/>
+									<a href="#">Problem sheet</a><br/><small>Wednesday 4pm</small><br/>
+									<a href="#">Big project</a><br/><small>Thursday 15th</small><br/>
+									<a href="#">Something long</a><br/><small>January 10th</small><br/>
+								</p>
+							</div>
 						</div>
 						
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>News</h3>
-							<p>
-								<a href="#">University wins award</a>  <small>2 hours ago</small><br/>
-								<a href="#">Researcher does something cool</a>  <small>Yesterday at 3pm</small><br/>
-								<a href="#">Students have no money</a>  <small>Friday 4pm</small><br/>
-								<a href="#">Government does something stupid</a>  <small>December 1st</small><br/>
-							</p>
-						</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				
-				<!-- RIGHT -->
-				<div class="span-one-third">
-					<div class="row">
-						
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>Email</h3>
-							<p>
-								<a href="#">Nobel Prize Foundation</a><br/><small>We've got some great news...</small><br/>
-								<a href="#">LinkedIn</a><br/><small>Message from Richard Branson...</small><br/>
-								<a href="#">James Cameron</a><br/><small>Please reconsider writing Avatar 2...</small><br/>
-								<a href="#">Guinness World Records</a><br/><small>Congratulations on your Rubik's Cube record...</small><br/>
-							</p>
-						</div>
+						<div class="span4">
+							<div class="sectionbox">
+								<h3>Upcoming events</h3>
+								<p>
+									<a href="#">Karaoke</a><br/><small>Today 7pm, The Stags Head</small><br/>
+									<a href="#">Society Meeting</a><br/><small>Today 8pm, The Stags Head</small><br/>
+									<a href="#">Pulp Fiction</a><br/><small>Saturday 8pm, Union Films</small><br/>
+									<a href="#">Something Else</a><br/><small>Sunday 3pm, The Nuffield Theatre</small><br/>
+								</p>
+							</div>
 						</div>
 						
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>Assignments</h3>
-							<p>
-								<a href="#">The big essay</a><br/><small>Tomorrow 4pm</small><br/>
-								<a href="#">Problem sheet</a><br/><small>Wednesday 4pm</small><br/>
-								<a href="#">Big project</a><br/><small>Thursday 15th</small><br/>
-								<a href="#">Something long</a><br/><small>January 10th</small><br/>
-							</p>
+						<div class="span4">
+							<div class="sectionbox">
+								<a href="library.html"><h3>Library Loans</h3></a>
+								<p>
+									<a href="#">Les Miserables</a><br/><small>Your reservation has arrived</small><br/>
+									<a href="#">Dracula</a><br/><small>Due: Tomorrow</small><br/>
+									<a href="#">Jane Eyre</a><br/><small>Due: Friday</small><br/>
+									<a href="#">A Tale of Two Cities</a><br/><small>Due: Next Semester</small><br/>
+								</p>
+							</div>
 						</div>
-						</div>
-						
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>Upcoming events</h3>
-							<p>
-								<a href="#">Karaoke</a><br/><small>Today 7pm, The Stags Head</small><br/>
-								<a href="#">Society Meeting</a><br/><small>Today 8pm, The Stags Head</small><br/>
-								<a href="#">Pulp Fiction</a><br/><small>Saturday 8pm, Union Films</small><br/>
-								<a href="#">Something Else</a><br/><small>Sunday 3pm, The Nuffield Theatre</small><br/>
-							</p>
-						</div>
-						</div>
-						
-						<div class="span-one-third">
-						<div class="sectionbox">
-							<h3>Library Loans</h3>
-							<p>
-								<a href="#">Les Miserables</a><br/><small>Your reservation has arrived</small><br/>
-								<a href="#">Dracula</a><br/><small>Due: Tomorrow</small><br/>
-								<a href="#">Jane Eyre</a><br/><small>Due: Friday</small><br/>
-								<a href="#">A Tale of Two Cities</a><br/><small>Due: Next Semester</small><br/>
-							</p>
-						</div>
+			
+						<div class="span4">
+							<div class="addbox">
+							</div>
 						</div>
 						
 					</div>
 				</div>
-				
-				
+			
+			
 				
 			</div>
 	    </div>

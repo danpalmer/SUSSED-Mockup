@@ -14,8 +14,39 @@
 	padding:3px 20px 3px 20px !important;
 }
 
-.span-one-third {
+.span4 {
 	margin-bottom:10px;
+}
+
+.userinfo {
+	float:right;
+	width:110px;
+	margin-left:10px;
+	overflow:hidden;
+}
+
+.person .info {
+	float:right;
+	width:170px;
+}
+
+.person {
+	margin-bottom:5px;
+}
+
+.separator {
+	margin-top:10px;
+	margin-bottom:10px;
+	background-color:#dddddd;
+	color:#dddddd;
+}
+
+.group-description {
+	padding-right:10px;
+}
+
+.profile {
+	border-right:1px solid #dddddd;
 }
 
 .sectionbox {
@@ -26,6 +57,26 @@
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 	border-radius:3px;
+}
+
+.addbox {
+	opacity: 0.8;
+	height: 200px;
+	border:10px dashed #ddd;
+	border-radius:3px;
+}
+
+.addbox:hover {
+	opacity:1;
+}
+
+.notification {
+	color:white;
+	width:100%;
+}
+
+.notification p {
+	line-height:15px;
 }
 
 .full_page {
